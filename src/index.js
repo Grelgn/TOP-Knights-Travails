@@ -1,14 +1,5 @@
-import GameBoard from "./gameBoard";
-import Position from "./position";
+import Tree from "./tree"
 
-const gameBoard = new GameBoard();
+const tree =  new Tree(0, 0);
 
-console.log(gameBoard);
-
-console.log(gameBoard.array[4][3]);
-
-const knight = new Position(gameBoard.array, 4, 3);
-console.log(knight);
-
-const knight2 = new Position(gameBoard.array, 1, 1);
-console.log(knight2);
+console.log(tree.root);
