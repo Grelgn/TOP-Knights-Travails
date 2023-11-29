@@ -1,5 +1,5 @@
 export default class Position {
-	constructor(board, x, y, depth) {
+	constructor(board, x, y, depth, before) {
         this.x = x;
         this.y = y;
 		this.value = board[x][y];
@@ -12,5 +12,6 @@ export default class Position {
 		this.f = null;
 		this.g = null;
 		this.h = null;
+		this.before = before;
 	}
 }
